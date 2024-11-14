@@ -162,11 +162,9 @@ padding-left: 100px;
 }
 /*ai*/
 #ai{
-    background-image:url(images/a.jpg);
     padding-top:0px;
     height:90vh;
-    
-    background-size: cover;
+     background-size: cover;
 }
 .ai-left-col{
     align-items: left;
