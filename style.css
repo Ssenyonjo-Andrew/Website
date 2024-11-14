@@ -4,10 +4,10 @@
 }
 #header{
     height: 70vh;
-    background-image:;
+    background-image:url(images/ro.jpg);
     background-position: center;
     background-size: cover;
-    animation: backgroundMove s linear infinite;
+    animation: backgroundMove 60s linear infinite;
 }
 @keyframes backgroundMove {
     0% {
@@ -35,6 +35,7 @@
 h1{
     font-size:90px;
     padding-left: 300px;
+    color:black;
 }
 
 h2{
@@ -62,7 +63,7 @@ p{
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    background:#723ed3;
+    background:rgb(54, 54, 198);
     outline:none;
     border:5px  ;
     font-weight: bold;
@@ -73,7 +74,6 @@ p{
 }
 #hiddenSection {
     margin-top: 0px;
-    background-color: aqua;
     padding: 10px;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
@@ -116,7 +116,7 @@ p{
     position:fixed;
     right:-250px;
     top:0;
-    background-color:#482020;
+    background-color:rgb(54, 54, 198);
     z-index: 2;
     border-radius:30px;
     transition: 0.7s;
@@ -310,35 +310,42 @@ padding-left: 100px;
 }
 
 #footer{
-    height:30vh;
     padding:50px 0 30px;
-}
-hr{
-    width:100%;
-    color: black;
 
 }
+hr{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #2882ba;
+}
 .footer-row{
-    text-align: center;
-    font-size:40px;
-    color: #e2e2e2;
-    display:flex;
-    align-items:center;
-    justify-content:space-between; 
-    flex-wrap: wrap;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .footer-left-col{
     flex-basis: 50%;
-    
 }
 .footer-right-col{
-    flex-basis: 50%;
-    backgroun
+    flex-basis: 35%;
 }
-.participates{
-    padding:10px 5px 4px;
-
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+.link-title small{
+    font-size: 13px;
+    color: #777;
+}
+.footer-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+   
 @media only screen and (max-width: 770px){
   /* Base styles remain the same */
 
